@@ -5,6 +5,7 @@ public class Main {
         System.out.println(toUpperCase(reverseString("Hello, World!")));
         System.out.println(toLowerCase(reverseString("Hello, World!")));
         System.out.println(length("Hello, World!"));
+        System.out.println(reverseCase("Hello, World!"));
     }
 
     /**
@@ -42,5 +43,24 @@ public class Main {
      */
     public static int length(String str){
         return str.length();
+    }
+
+    /**
+     * Reverses the case of each character in the given string
+     * @param str the string whose case is to be reversed
+     * @return the string with reversed case
+     */
+    public static String reverseCase(String str) {
+        StringBuilder sb = new StringBuilder();
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                sb.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                sb.append(Character.toUpperCase(c));
+            } else {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
     }
 }
