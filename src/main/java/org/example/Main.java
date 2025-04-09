@@ -34,6 +34,11 @@ public class Main {
         return str.toLowerCase();
     }
 
+    /**
+     * Gets the length of a given string
+     * @param str the string to find the length of
+     * @return the length of the string
+     */
     public static int length(String str){
         return str.length();
     }
