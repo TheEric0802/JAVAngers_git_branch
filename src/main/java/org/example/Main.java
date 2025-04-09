@@ -33,4 +33,8 @@ public class Main {
     public static String toLowerCase(String str){
         return str.toLowerCase();
     }
+
+    public static int length(String str){
+        return str.length();
+    }
 }
