@@ -47,20 +47,20 @@ public class Main {
 
     /**
      * Reverses the case of each character in the given string
-     * @param str the string whose case is to be reversed
+     * @param inputString the string whose case is to be reversed
      * @return the string with reversed case
      */
-    public static String reverseCase(String str) {
-        StringBuilder sb = new StringBuilder();
-        for (char c : str.toCharArray()) {
+    public static String reverseCase(String inputString) {
+        StringBuilder outputString = new StringBuilder();
+        for (char c : inputString.toCharArray()) {
             if (Character.isUpperCase(c)) {
-                sb.append(Character.toLowerCase(c));
+                outputString.append(Character.toLowerCase(c));
             } else if (Character.isLowerCase(c)) {
-                sb.append(Character.toUpperCase(c));
+                outputString.append(Character.toUpperCase(c));
             } else {
-                sb.append(c);
+                outputString.append(c);
             }
         }
-        return sb.toString();
+        return outputString.toString();
     }
 }
