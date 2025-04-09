@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(toUpperCase(reverseString("Hello, World!")));
         System.out.println(toLowerCase(reverseString("Hello, World!")));
+        System.out.println(length("Hello, World!"));
     }
 
     /**
@@ -32,5 +33,14 @@ public class Main {
      */
     public static String toLowerCase(String str){
         return str.toLowerCase();
+    }
+
+    /**
+     * Gets the length of a given string
+     * @param str the string to find the length of
+     * @return the length of the string
+     */
+    public static int length(String str){
+        return str.length();
     }
 }
