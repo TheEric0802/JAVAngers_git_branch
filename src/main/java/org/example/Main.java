@@ -2,7 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(reverseString("Hello, World!"));
+        System.out.println(toLowerCase(reverseString("Hello, World!")));
     }
 
     /**
@@ -13,5 +13,14 @@ public class Main {
     public static String reverseString(String str){
         StringBuilder sb = new StringBuilder(str);
         return sb.reverse().toString();
+    }
+
+        /**
+     * Converts the given string to lower case
+     * @param str the string to be converted
+     * @return the lower case string
+     */
+    public static String toLowerCase(String str){
+        return str.toLowerCase();
     }
 }
