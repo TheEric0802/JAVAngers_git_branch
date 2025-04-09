@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(toUpperCase(reverseString("Hello, World!")));
         System.out.println(toLowerCase(reverseString("Hello, World!")));
+        System.out.println(length("Hello, World!"));
     }
 
     /**
